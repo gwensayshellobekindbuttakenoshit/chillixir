@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Client Name</title>
+    <title>Contact Me | Chillixir by Gwen</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,7 +13,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="spray.html">Spray</a></li>
+                <li><a href="cream.html">Crema</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -21,9 +22,27 @@
 
     <main>
         <section class="container">
-            <h1>Get In Touch</h1>
-            <p>Have a question or want to work together? Reach out below.</p>
+           <!-- <h1>Get In Touch</h1>
+            <p>Have a question or want to work together? Reach out below.</p>-->
+            <h2>¿Tienes preguntas sobre Chillixir?</h2>
+<p>¿Necesitas ayuda para elegir un producto, tienes duda sobre los ingredientes o quieres hacer un pedido especial? Escríbenos.</p>
+<!-- Your Chillixir Contact Form Here -->
 
+            <h2>¿Te gustó el diseño de esta página?</h2>
+<p>También diseño sitios web minimalistas, modernos y fáciles de usar para pequeñas empresas y emprendedores. Si quieres una página similar para tu negocio, hablemos.</p>
+<!-- Your Web Design Contact Form Here -->
+
+           <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+    <div class="form-group">
+        <label for="reason">¿Sobre qué quieres hablar?</label>
+        <select id="reason" name="reason" required>
+            <option value="" disabled selected>Selecciona una opción...</option>
+            <option value="chillixir-product">Pregunta sobre productos Chillixir</option>
+            <option value="chillixir-order">Problema con mi pedido de Chillixir</option>
+            <option value="web-design">Me interesa un sitio web para mi negocio</option>
+        </select>
+    </div>
+    <!-- The rest of your normal form fields (name, email, message) go here -->
             <!-- CHANGE THE FORM ACTION TO YOUR FORM PROCESSING SCRIPT (e.g., Formspree) -->
             <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
                 <div class="form-group">
@@ -45,8 +64,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Client Business Name. All rights reserved.</p>
+            <p>&copy; 2025 Chillixir by Gwen. All rights reserved.</p>
         </div>
     </footer>
 </body>
+
 </html>
