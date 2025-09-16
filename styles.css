@@ -31,6 +31,12 @@ body {
     line-height: 1.6;
 }
 
+/* ====== FIX HEADER OVERLAP ====== */
+/* This ensures content starts BELOW the fixed header */
+main {
+    margin-top: 80px; /* Adjust this value to match your header's height */
+}
+
 /* ====== TYPOGRAPHY ====== */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
@@ -204,3 +210,4 @@ footer {
     font-size: 1.2rem; /* Smaller text on mobile */
   }
 }
+
