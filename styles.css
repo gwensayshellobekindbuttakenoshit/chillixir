@@ -192,22 +192,32 @@ footer {
 
 /* ====== MOBILE RESPONSIVE DESIGN ====== */
 @media (max-width: 768px) {
+      /* Keep the navigation horizontal but make it compact */
+
   nav ul {
-    flex-direction: column; /* Stacks links vertically */
-    text-align: center;
-    padding: 1rem;
+    displayL flex;
+    flex-direction: row; /* Stacks links horizontally */
+    justify-content: center; /* Center them */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    padding: 0.5rem 0; /* Reduce padding */
   }
   
   nav ul li {
-    margin: 0.5rem 0; /* Adds space between stacked links */
+    margin: 0 0.8rem; /* Reduce spacing between items */
   }
 
   .hero h1 {
-    font-size: 2.5rem; /* Smaller heading on mobile */
+    font-size: 2rem;
+    margin-top: 60px; /* Ensure it clears the fixed header */  
   }
 
   .hero p {
-    font-size: 1.2rem; /* Smaller text on mobile */
+    font-size: 1rem; 
   }
+      /* Ensure the container doesn't cause overflow */
+  .container {
+    width: 95%;
+    padding: 1rem 0;
 }
+
 
