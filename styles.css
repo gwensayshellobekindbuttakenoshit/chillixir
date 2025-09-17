@@ -196,7 +196,7 @@ footer {
 
         .language-switcher {
         top: 0.5rem;
-        right: 0.5rem;
+        left: 0.5rem;
     }
     
       /* Keep the navigation horizontal but make it compact */
@@ -226,6 +226,7 @@ footer {
     width: 95%;
     padding: 1rem 0;
 }
+
 
 
 
