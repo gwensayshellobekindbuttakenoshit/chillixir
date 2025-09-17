@@ -32,6 +32,7 @@ body {
 }
 
 /* ====== FIX HEADER OVERLAP ====== */
+
 /* This ensures content starts BELOW the fixed header */
 main {
     margin-top: 80px; /* Adjust this value to match your header's height */
@@ -192,6 +193,12 @@ footer {
 
 /* ====== MOBILE RESPONSIVE DESIGN ====== */
 @media (max-width: 768px) {
+
+        .language-switcher {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+    
       /* Keep the navigation horizontal but make it compact */
 
   nav ul {
@@ -219,5 +226,6 @@ footer {
     width: 95%;
     padding: 1rem 0;
 }
+
 
 
