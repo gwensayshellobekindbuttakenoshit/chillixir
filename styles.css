@@ -37,7 +37,23 @@ body {
 main {
     margin-top: 80px; /* Adjust this value to match your header's height */
 }
+    /* ====== LANGUAGE SWITCHER (Default for ALL screens) ====== */
+.language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; /* ← This puts it on the RIGHT by default */
+    font-size: 0.9rem;
+}
 
+.language-switcher a {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-weight: bold;
+}
+
+.language-switcher a:hover {
+    color: var(--color-accent);
+}
 /* ====== TYPOGRAPHY ====== */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
@@ -226,6 +242,7 @@ footer {
     width: 95%;
     padding: 1rem 0;
 }
+
 
 
 
