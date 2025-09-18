@@ -218,7 +218,7 @@ footer {
       /* Keep the navigation horizontal but make it compact */
 
   nav ul {
-    displayL flex;
+    display: flex;
     flex-direction: row; /* Stacks links horizontally */
     justify-content: center; /* Center them */
     flex-wrap: wrap; /* Allow items to wrap if needed */
@@ -242,6 +242,7 @@ footer {
     width: 95%;
     padding: 1rem 0;
 }
+
 
 
 
