@@ -1,18 +1,12 @@
 
-CSS
-
 /* ====== CSS VARIABLES ====== */
-/* Define your color palette and fonts here. Change these values to rebrand instantly! */
 :root {
-    /* Colors */
-    --color-primary: #6a4a8c;    /* Main purple */
-    --color-primary-dark: #51366d; /* Darker purple (for hovers) */
-    --color-background: #f5f1e6;  /* Cream background */
-    --color-text: #333;           /* Main text color (dark gray) */
-    --color-text-light: #f5f1e6;  /* Light text for dark backgrounds */
-    --color-accent: #9f6ba0;      /* Lighter purple accent */
-
-    /* Fonts */
+    --color-primary: #6a4a8c;
+    --color-primary-dark: #51366d;
+    --color-background: #f5f1e6;
+    --color-text: #333;
+    --color-text-light: #f5f1e6;
+    --color-accent: #9f6ba0;
     --font-heading: 'Georgia', serif;
     --font-body: 'Helvetica', 'Arial', sans-serif;
 }
@@ -32,16 +26,15 @@ body {
 }
 
 /* ====== FIX HEADER OVERLAP ====== */
-
-/* This ensures content starts BELOW the fixed header */
 main {
-    margin-top: 80px; /* Adjust this value to match your header's height */
+    margin-top: 80px;
 }
-    /* ====== LANGUAGE SWITCHER (Default for ALL screens) ====== */
+
+/* ====== LANGUAGE SWITCHER ====== */
 .language-switcher {
     position: absolute;
     top: 1rem;
-    right: 1rem; /* ← This puts it on the RIGHT by default */
+    right: 1rem;
     font-size: 0.9rem;
 }
 
@@ -54,6 +47,7 @@ main {
 .language-switcher a:hover {
     color: var(--color-accent);
 }
+
 /* ====== TYPOGRAPHY ====== */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
@@ -63,6 +57,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 2rem;
 }
 
 /* ====== LAYOUT & CONTAINERS ====== */
@@ -105,27 +103,6 @@ nav ul li a:hover {
     color: var(--color-accent);
 }
 
-/* ====== HERO SECTION ====== */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: var(--color-background);
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
 /* ====== BUTTONS ====== */
 .btn {
     display: inline-block;
@@ -143,11 +120,6 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
-/* ====== SECTION STYLES ====== */
-section {
-    padding: 5rem 0;
-}
-
 /* ====== PROJECTS/ITEMS GRID ====== */
 .items-grid {
     display: grid;
@@ -162,89 +134,50 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .item:hover {
     transform: translateY(-5px);
 }
 
-/* ====== CONTACT FORM ====== */
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
+.item img {
     width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-family: var(--font-body);
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
-.form-group textarea {
-    min-height: 150px;
+.item-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin: 0.5rem 0;
 }
-
-/* ====== FOOTER ====== */
-footer {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
-}
-
 
 /* ====== MOBILE RESPONSIVE DESIGN ====== */
 @media (max-width: 768px) {
-
-        .language-switcher {
+    .language-switcher {
         top: 0.5rem;
         left: 0.5rem;
     }
-    
-      /* Keep the navigation horizontal but make it compact */
 
-  nav ul {
-    display: flex;
-    flex-direction: row; /* Stacks links horizontally */
-    justify-content: center; /* Center them */
-    flex-wrap: wrap; /* Allow items to wrap if needed */
-    padding: 0.5rem 0; /* Reduce padding */
-  }
-  
-  nav ul li {
-    margin: 0 0.8rem; /* Reduce spacing between items */
-  }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0.5rem 0;
+    }
 
-  .hero h1 {
-    font-size: 2rem;
-    margin-top: 60px; /* Ensure it clears the fixed header */  
-  }
+    nav ul li {
+        margin: 0 0.8rem;
+    }
 
-  .hero p {
-    font-size: 1rem; 
-  }
-      /* Ensure the container doesn't cause overflow */
-  .container {
-    width: 95%;
-    padding: 1rem 0;
+    .container {
+        width: 95%;
+        padding: 1rem 0;
+    }
 }
-
-
-
-
-
-
