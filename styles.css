@@ -1,12 +1,11 @@
-
 /* ====== CSS VARIABLES ====== */
 :root {
-    --color-primary: #6a4a8c;
-    --color-primary-dark: #51366d;
+    --color-primary: #333333;
+    --color-primary-dark: #000000;
     --color-background: #f5f1e6;
-    --color-text: #333;
-    --color-text-light: #f5f1e6;
-    --color-accent: #9f6ba0;
+    --color-text: #333333;
+    --color-text-light: #ffffff;
+    --color-accent: #666666;
     --font-heading: 'Georgia', serif;
     --font-body: 'Helvetica', 'Arial', sans-serif;
 }
@@ -27,7 +26,20 @@ body {
 
 /* ====== FIX HEADER OVERLAP ====== */
 main {
-    margin-top: 80px;
+    padding-top: 100px; /*instead of margin for more reliable spacing */
+}
+
+/* ====== HERO SECTION ===== */
+
+.hero {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--color-background);
+    padding: 2rem 0;
 }
 
 /* ====== LANGUAGE SWITCHER ====== */
@@ -69,6 +81,13 @@ h3 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 0;
+}
+
+.container ul {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 /* ====== HEADER & NAVIGATION ====== */
@@ -173,7 +192,7 @@ nav ul li a:hover {
     }
 
     nav ul li {
-        margin: 0 0.8rem;
+        margin: 0 0.8rem 0.5rem;
     }
 
     .container {
