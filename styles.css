@@ -143,7 +143,7 @@ nav ul li a:hover {
 .items-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 2rem;
 }
 
@@ -200,5 +200,6 @@ nav ul li a:hover {
         padding: 1rem 0;
     }
 }
+
 
 
