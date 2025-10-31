@@ -2,7 +2,7 @@
 :root {
     --color-primary: #333333;
     --color-primary-dark: #000000;
-    --color-background: #ffffff;
+    --color-background: #f8e4aa;
     --color-text: #333333;
     --color-text-light: #ffffff;
     --color-accent: #666666;
@@ -200,4 +200,5 @@ nav ul li a:hover {
         padding: 1rem 0;
     }
 }
+
 
