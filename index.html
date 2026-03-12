@@ -17,14 +17,56 @@
     <a href="index-en.html">🌐EN</a>
         </div>
         <nav>
-            <ul>
-                <!-- UPDATE HREF IF PAGE NAMES CHANGE -->
+            <ul class="nav-menu">
+                <!-- Main navigation items -->
                 <li><a href="index.html">Página principal</a></li>
                 <li><a href="about-me.html">Sobre Mí</a></li>
-                <li><a href="spray.html">Spray</a></li>
-                <li><a href="rollon.html">Rollon</a></li>
-                <li><a href="cream.html">Crema</a></li>
-                <li><a href="exfoliante.html">Exfoliante</a></li>
+                
+                <!-- PRODUCTS DROPDOWN (main) -->
+                <li class="dropdown">
+                <a href="products.html" class="dropbtn">Productos ▾</a>
+                <ul class="dropdown-content">
+
+                    <!-- SPRAYS dropdown (nested) -->
+                    <li class="nested-dropdown">
+                        <li><a href="spray.html">Sprays ▸</a>
+                        <ul class="nested-dropdown-content">
+                            <li><a href="spray-unscented.html">Sin Fragancia</a></li>
+                            <li><a href="spray-lavender.html">Lavanda</a></li>
+                            <li><a href="spray-bergamot.html">Bergamota</a></li>
+                    </ul>
+                </li>
+
+                <!-- ROLL-ONS dropdown (nested) -->
+                <li class="nested-dropdown">
+                    <a href="rollon.html">Rollon ▸</a>
+                    <ul class="nested-dropdown-content">
+                        <li><a href="rollon-unscented.html">Sin Fragancia</a></li>
+                        <li><a href="rollon-lavender.html">Lavanda</a></li>
+                        <li><a href="rollon-bergamot.html">Bergamota</a></li>
+                    </ul>
+                </li>
+
+                <!-- CREAMS dropdown (nested) -->
+                <li class="nested-dropdown">
+                   <li><a href="cream.html">Crema ▸</a> 
+                   <ul class="nested-dropdown-content">
+                        <li><a href="cream-unscented.html">Sin Fragancia</a></li>
+                        <li><a href="cream-lavender.html">Lavanda</a></li>
+                        <li><a href="cream-bergamot.html">Bergamota</a></li>
+                   </ul>
+                </li>
+
+                <!-- LIMITED EDITIONS dropdown (nested) -->
+                <li class="nested-dropdown">
+                    <a href="limited-editions.html">Limited Editions ▸</a>
+                    <ul class="nested-dropdown-content">
+                        <li><a href="spring-ylang.html">Primavera</a></li>
+                        <li><a href="fall-frankincense.html">Otoño</a></li>
+                        <li><a href="exfoliante.html">Exfoliante</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="compra.html">Compra</a></li>
                 <li><a href="contact-me.html">Contáctenos</a></li>
             </ul>
@@ -103,6 +145,7 @@
 </body>
 
 </html>
+
 
 
 
