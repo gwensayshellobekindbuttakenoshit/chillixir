@@ -176,6 +176,104 @@ nav ul li a:hover {
     margin: 0.5rem 0;
 }
 
+/* ====== DROPDOWN MENU STYLES ====== */
+
+/* Reset list styles */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Style all links */
+.nav-menu a {
+  text-decoration: none;
+  color: var(--color-text-light);
+  padding: 0.5rem 0;
+  display: block;
+}
+
+/* ====== MAIN DROPDOWN (Products) ====== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-primary);
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style main dropdown items */
+.dropdown-content li {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-content a {
+  padding: 0.75rem 1rem;
+  color: var(--color-text-light);
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* ====== NESTED DROPDOWNS (Sprays/Roll-ons/etc) ====== */
+.nested-dropdown {
+  position: relative;
+}
+
+.nested-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: var(--color-primary);
+  min-width: 180px;
+  list-style: none;
+  padding: 0.5rem 0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.nested-dropdown:hover .nested-dropdown-content {
+  display: block;
+}
+
+/* Style nested items */
+.nested-dropdown-content a {
+  padding: 0.5rem 1rem;
+}
+
+/* Optional: Add arrows for dropdown indicators */
+.dropbtn::after {
+  content: " ▾";
+  font-size: 0.8em;
+}
+
+.nested-dropdown > a::after {
+  content: " ▸";
+  font-size: 0.8em;
+  float: right;
+}
+
+
+
 /* ====== MOBILE RESPONSIVE DESIGN ====== */
 @media (max-width: 768px) {
     .language-switcher {
@@ -201,5 +299,33 @@ nav ul li a:hover {
     }
 }
 
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .dropdown-content {
+    position: static;
+    display: none;
+    box-shadow: none;
+    padding-left: 1rem;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .nested-dropdown-content {
+    position: static;
+    display: none;
+    padding-left: 2rem;
+  }
+  
+  .nested-dropdown:hover .nested-dropdown-content {
+    display: block;
+  }
+}
 
 
