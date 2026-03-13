@@ -42,23 +42,7 @@ main {
     padding: 2rem 0;
 }
 
-/* ====== LANGUAGE SWITCHER ====== */
-.language-switcher {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 0.9rem;
-}
 
-.language-switcher a {
-    text-decoration: none;
-    color: var(--color-text-light);
-    font-weight: bold;
-}
-
-.language-switcher a:hover {
-    color: var(--color-accent);
-}
 
 /* ====== TYPOGRAPHY ====== */
 h1, h2, h3, h4, h5, h6 {
@@ -328,4 +312,22 @@ nav ul li a:hover {
   }
 }
 
+
+/* ====== LANGUAGE SWITCHER ====== */
+.language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-weight: bold;
+}
+
+.language-switcher a:hover {
+    color: var(--color-accent);
+}
 
