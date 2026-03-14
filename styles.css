@@ -68,6 +68,7 @@ main {
     text-align: center;
     background: var(--color-background);
     padding: 2rem 0;
+    padding-top: 80px;
 }
 
 
