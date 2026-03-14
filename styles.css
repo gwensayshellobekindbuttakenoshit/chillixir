@@ -49,6 +49,7 @@ body {
     color: var(--color-text);
     background-color: var(--color-background);
     line-height: 1.6;
+    padding-top: 80px; 
 }
 
 /* ====== FIX HEADER OVERLAP ====== */
