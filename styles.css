@@ -287,6 +287,16 @@ nav ul li a:hover {
 
 /* ====== MOBILE RESPONSIVE DESIGN ====== */
 @media (max-width: 768px) {
+
+      /* Header spacing fix */
+  body {
+    padding-top: 60px; /* Adjust to your header height */
+  }
+  
+  header {
+    height: 60px; /* Fixed height helps with calculations */
+  }
+    
     .language-switcher {
         top: 0.5rem;
         left: auto;
@@ -315,28 +325,29 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
-    gap: 0;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 1rem 0;
+    margin: 0;
   }
   
-  .dropdown-content {
+  .dropdown-content, 
+  .nested-dropdown-content {
     position: static;
     display: none;
     box-shadow: none;
     padding-left: 1rem;
   }
   
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content,
+  .nested-dropdown:hover .nested-dropdown-content  {
     display: block;
   }
   
-  .nested-dropdown-content {
-    position: static;
-    display: none;
-    padding-left: 2rem;
-  }
-  
-  .nested-dropdown:hover .nested-dropdown-content {
-    display: block;
+  .hero, .container:first-of-type {
+      padding-top: 20px;
+   
   }
 }
 
