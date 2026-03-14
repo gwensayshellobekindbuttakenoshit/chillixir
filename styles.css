@@ -292,7 +292,7 @@ nav ul li a:hover {
 
       /* Header spacing fix */
   body {
-    padding-top: 60px; /* Adjust to your header height */
+    padding-top: 0px; /* Adjust to your header height */
   }
   
   header {
