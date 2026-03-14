@@ -294,6 +294,11 @@ nav ul li a:hover {
   body {
     padding-top: 0px; /* Adjust to your header height */
   }
+
+    .hero,
+    .container:first-of-type {
+        margin-top: 1rem;
+    }
   
   header {
     height: 80px; /* Fixed height helps with calculations */
