@@ -1,3 +1,24 @@
+
+/* ====== LANGUAGE SWITCHER ====== */
+.language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-weight: bold;
+}
+
+.language-switcher a:hover {
+    color: var(--color-accent);
+}
+
+
+
 /* ====== CSS VARIABLES ====== */
 :root {
     --color-primary: #333333;
@@ -312,22 +333,4 @@ nav ul li a:hover {
   }
 }
 
-
-/* ====== LANGUAGE SWITCHER ====== */
-.language-switcher {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 0.9rem;
-}
-
-.language-switcher a {
-    text-decoration: none;
-    color: var(--color-text-light);
-    font-weight: bold;
-}
-
-.language-switcher a:hover {
-    color: var(--color-accent);
-}
 
