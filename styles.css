@@ -1,3 +1,28 @@
+/* ====== LANGUAGE SWITCHER ====== */
+.language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+    z-index: 10000; /* Higher than dropdowns */
+    pointer-events: auto; /* Ensure it's clickable */
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-weight: bold;
+}
+
+.language-switcher a:hover {
+    color: var(--color-accent);
+}
+
+/* Make sure dropdowns don't block it */
+.dropdown-content {
+  z-index: 9999; /* Lower than language switcher */
+}
+
 
 
 /* ====== CSS VARIABLES ====== */
@@ -264,7 +289,8 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     .language-switcher {
         top: 0.5rem;
-        left: 0.5rem;
+        left: auto;
+        right: 1rem;
     }
 
     nav ul {
@@ -315,23 +341,5 @@ nav ul li a:hover {
 }
 
 
-
-/* ====== LANGUAGE SWITCHER ====== */
-.language-switcher {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 0.9rem;
-}
-
-.language-switcher a {
-    text-decoration: none;
-    color: var(--color-text-light);
-    font-weight: bold;
-}
-
-.language-switcher a:hover {
-    color: var(--color-accent);
-}
 
 
