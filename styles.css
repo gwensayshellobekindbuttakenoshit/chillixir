@@ -297,17 +297,26 @@ nav ul li a:hover {
   
   header {
     height: 80px; /* Fixed height helps with calculations */
+    position: relative;
+    top: auto;
+    width: 100%;
+    z-index: auto;
   }
     
     .language-switcher {
         top: 0.5rem;
         left: auto;
         right: 1rem;
+        position: fixed;
+        z-index: 10000;
+        background: var(--color-primary);
+        padding: 0.25rem 0.5rem;
+        border-radius: 20px;
     }
 
     nav ul {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
         padding: 0.5rem 0;
@@ -326,7 +335,7 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
   .nav-menu {
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.5rem;
     align-items: center;
     background-color: var(--color-primary);
