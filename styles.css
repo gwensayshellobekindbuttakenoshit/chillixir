@@ -296,7 +296,7 @@ nav ul li a:hover {
   }
   
   header {
-    height: 60px; /* Fixed height helps with calculations */
+    height: 80px; /* Fixed height helps with calculations */
   }
     
     .language-switcher {
@@ -326,7 +326,7 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
   .nav-menu {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
     align-items: center;
     background-color: var(--color-primary);
