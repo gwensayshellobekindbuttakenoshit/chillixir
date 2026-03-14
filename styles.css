@@ -297,7 +297,7 @@ nav ul li a:hover {
 
     .hero,
     .container:first-of-type {
-        margin-top: 1rem;
+        margin-top: 80px;
     }
   
   header {
@@ -362,7 +362,7 @@ nav ul li a:hover {
   }
   
   .hero, .container:first-of-type {
-      padding-top: 20px;
+      padding-top: 80px;
    
   }
 }
