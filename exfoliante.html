@@ -22,8 +22,8 @@
                 
                 <!-- PRODUCTS DROPDOWN (main) -->
                 <li class="dropdown">
-                <a href="products.html" class="dropbtn">Productos</a>
-                <ul class="dropdown-content">
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown(event)">Productos</a>
+                <ul class="dropdown-content" id="productsDropdown">
 
                     <!-- SPRAYS dropdown (nested) -->
                     <li class="nested-dropdown">
@@ -143,6 +143,31 @@
             <p>&copy; 2025 Chillixir by Gwen. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function toggleDropdown(event) {
+  event.preventDefault(); // Stop any page jump
+  let dropdown = document.getElementById("productsDropdown");
+  
+  // If dropdown is hidden, show it; if visible, hide it
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+
+// Optional: Close dropdown when clicking anywhere else on the page
+document.addEventListener("click", function(event) {
+  let isClickInside = event.target.closest(".dropdown");
+  let dropdown = document.getElementById("productsDropdown");
+  
+  if (!isClickInside && dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  }
+});
+    </script>
+    
 </body>
 
 </html>
