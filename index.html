@@ -145,6 +145,29 @@
     </a>
 </div>
     </footer>
+
+      <script>
+    function toggleDropdown(event) {
+      event.preventDefault();
+      let dropdown = document.getElementById("productsDropdown");
+      
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      } else {
+        dropdown.style.display = "block";
+      }
+    }
+
+    document.addEventListener("click", function(event) {
+      let isClickInside = event.target.closest(".dropdown");
+      let dropdown = document.getElementById("productsDropdown");
+      
+      if (!isClickInside && dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      }
+    });
+  </script>
+    
 </body>
 
 </html>
