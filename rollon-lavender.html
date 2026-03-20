@@ -13,16 +13,61 @@
         <div class="language-switcher">
     <a href="spray-en.html">🌐EN</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-me.html">About</a></li>
-                <li><a href="spray.html">Spray</a></li>
-                <li><a href="roll-on.html">Rollon</a></li>
-                <li><a href="cream.html">Crema</a></li>
-                <li><a href="exfoliante.html">Exfoliante</a></li>
-                <li><a href="compra.html">Shop</a></li>
-                <li><a href="contact-me.html">Contact</a></li>
+ <nav>
+            <ul class="nav-menu">
+                <!-- Main navigation items -->
+                <li><a href="index.html">Página principal</a></li>
+                <li><a href="about-me.html">Sobre Mí</a></li>
+                
+                <!-- PRODUCTS DROPDOWN (main) -->
+                <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown(event)">Productos</a>
+                <ul class="dropdown-content" id="productsDropdown">
+
+                    <!-- SPRAYS dropdown (nested) -->
+                    <li class="nested-dropdown">
+                        <a href="spray.html">Sprays ▸</a>
+                        <ul class="nested-dropdown-content">
+                            <li><a href="spray-unscented.html">Sin Fragancia</a></li>
+                            <li><a href="spray-lavender.html">Lavanda</a></li>
+                            <li><a href="spray-bergamot.html">Bergamota</a></li>
+                    </ul>
+                </li>
+
+                <!-- ROLL-ONS dropdown (nested) -->
+                <li class="nested-dropdown">
+                    <a href="rollon.html">Rollon ▸</a>
+                    <ul class="nested-dropdown-content">
+                        <li><a href="rollon-unscented.html">Sin Fragancia</a></li>
+                        <li><a href="rollon-lavender.html">Lavanda</a></li>
+                        <li><a href="rollon-bergamot.html">Bergamota</a></li>
+                    </ul>
+                </li>
+
+                <!-- CREAMS dropdown (nested) -->
+                <li class="nested-dropdown">
+                   <a href="cream.html">Crema ▸</a> 
+                   <ul class="nested-dropdown-content">
+                        <li><a href="cream-unscented.html">Sin Fragancia</a></li>
+                        <li><a href="cream-lavender.html">Lavanda</a></li>
+                        <li><a href="cream-bergamot.html">Bergamota</a></li>
+                   </ul>
+                </li>
+
+                <!-- LIMITED EDITIONS dropdown (nested) -->
+                <li class="nested-dropdown">
+                    <a href="limited-editions.html">Limited Editions ▸</a>
+                    <ul class="nested-dropdown-content">
+                        <li><a href="spring-ylang.html">Primavera</a></li>
+                        <li><a href="fall-frankincense.html">Otoño</a></li>
+                        <li><a href="exfoliante.html">Exfoliante</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+                <li><a href="compra.html">Compra</a></li>
+                <li><a href="contact-me.html">Contáctenos</a></li>
             </ul>
         </nav>
     </header>
@@ -37,6 +82,7 @@
                 <div class="item">
                     <img src="images/rollon_lavender.png" alt="Chillixir Relaxation Spray Bottle">
                     <!--<p class="item-price">$350 MXN</p> -->
+                    <br>
                     <a href="contact-me.html" class="btn">Solicitar para Comprar</a>
                 </div>
             </div>
@@ -48,7 +94,6 @@
              <!--   <img src="assets/project1-large.jpg" alt="Full view of Project One" style="width: 100%; margin-bottom: 1rem;"> -->
                <br>
               <br>
-              <h2>¿Qué es el Roll-on de Magnesio y Lavanda?</h2>
                 <p>Una mezcla concentrada de magnesio puro y aceite 
                   esencial de lavanda 100% natural en un práctico envase 
                   roll-on . Diseñado para aplicación directa en sienes, muñecas y 
@@ -56,21 +101,6 @@
                   reconectar contigo.</p>
 
                 
-<!-- Key Benefits List -->
-<h3>¿Por qué amarlo?</h3>
-<ul>
-    <li>Alivio directo donde más lo necesita</li>
-    <li>Ideal para bolsas o viajes</li>
-    <li>Absorción rápida y nada grasoso</li>
-    <li>Magnesio puro + lavanda para una calma instantánea</li>
-    <li>Perfecto para estrés, tensión o momentos de ansiedad</li>
-</ul>
-
-<!-- How to Use -->
-<h3>¿Cómo se usa?</h3>
-<p>Aplica en sienes, muñecas o detrás de las orejas. Desliza 
-  suavemente y masajea. Úsalo cuando necesites reconectar — antes de 
-  una reunión, de viaje, o como parte de tu rutina nocturna.</p>
 
 <!-- Ingredients -->
 <h3>Ingredientes puros:</h3>
